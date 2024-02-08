@@ -1,6 +1,4 @@
----
-lang: pt-br
----
+<!-- LTeX: SETTINGS language=pt-BR -->
 
 # Cálculo Numérico - Q1/2024 - UFABC
 
