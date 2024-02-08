@@ -1,2 +1,5 @@
 .direnv
 .mamba
+# pixi environments
+.pixi
+

@@ -18,13 +18,11 @@
           config.allowUnfree = true;
         };
         fhs = pkgs.buildFHSUserEnv {
-          name = "micromamba";
+          name = "pixi";
 
           targetPkgs = pkgs: (with pkgs; [
-            micromamba
+            pixi
           ]);
-
-          profile = builtins.readFile ./init.sh;
         };
       in {
         devShell = fhs.env;
