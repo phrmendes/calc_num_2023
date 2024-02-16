@@ -1,0 +1,36 @@
+[project]
+name = "calc_num_2023"
+version = "0.1.0"
+description = "Curso de Cálculo Numérico - UFABC "
+authors = [{ name = "Pedro Mendes", email = "pedrohrmendes@proton.me" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+keywords = ["calculo numerico", "ufabc", "2023"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+useLibraryCodeForTypes = false
+venvPath = "."
+venv = ".pixi"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+indent-width = 4
+select = ["ALL"]
+exclude = [
+  ".git",
+  ".ipynb_checkpoints",
+  ".pixi",
+  ".virtual_documents",
+  "__pycache__",
+]
+ignore = [
+  "ANN101", # missing type annotation for self in method
+  "ARG001", # unused function argument
+  "D100",   # missing docstring in public module
+  "D103",   # missing docstring in public function
+  "S603",   # subprocess call - check for execution of untrusted input
+  "T201",   # print statement used in code
+]

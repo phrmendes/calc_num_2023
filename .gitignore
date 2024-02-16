@@ -1,5 +1,4 @@
-.direnv
-.mamba
-# pixi environments
+.ipynb_checkpoints
 .pixi
-
+.virtual_documents
+src/__pycache__
